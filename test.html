@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;padding: 0;
+    }
+    body{
+      height: 100vh;width: 100%;
+      display: flex;align-items: center;justify-content: center;
+      background: #000;
+    }
+    .boll{
+      width: 100px;
+      height: 100px;
+      background: #ffffff;
+      position: relative;
+      border-bottom-left-radius: 100px;
+      border-top-left-radius: 100px;
+    }
+    .boll::after{
+      content: '';
+      position: absolute;
+      top: -47px;
+      right: 0;
+      z-index: 2;
+      /* border-radius: 50px; */
+      width: 60px;
+      height: 50px;background: rgb(255, 89, 89);
+      /* border-bottom-right-radius: 50px; */
+      rotate: 180deg;
+    }
+    .boll::before{
+      content: '';
+      position: absolute;
+      bottom: -47px;
+      right: 0;
+      z-index: 2;
+      /* border-radius: 50px; */
+      width: 60px;
+      /* border: 5px solid white; */
+      height: 50px;background: rgb(29, 255, 142);
+      rotate: 180deg;
+      /* border-top-right-radius: 50px; */
+      
+
+    }
+  </style>
+</head>
+<body>
+  <div class="boll"></div>
+</body>
+</html>
